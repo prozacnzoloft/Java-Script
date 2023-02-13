@@ -121,8 +121,57 @@ This will return `hello` `hello` in console.
 <hr>
 
 ### Data Types
-#### Primitive
-Number, String, Boolean, Null, Undefined, BigInt
 
-#### Non-Primitive
-Objects, Arrays 
+  
+JavaScript has several built-in data types, which can be grouped into two main categories: primitive data types and reference data types.
+
+#### Primitive data types:
+
+ String: a set of characters (e.g. "Hello World").
+ 
+ Number: a numerical value (e.g. 42 or 3.14).
+ 
+Boolean: a value that can either be true or false.
+
+Undefined: a value that represents a variable that has been declared but has not been assigned a value.
+
+Null: a special value that represents the intentional absence of any object value.
+
+#### Reference data types:
+
+Object: a collection of key-value pairs, used to store data.
+
+Array: an ordered list of values, represented by square brackets (e.g. [1, 2, 3]).
+Function: a block of code that performs a specific task and can be called multiple times.
+
+Symbol: a new data type in ECMAScript 6 (ES6) that is used to create unique values that are not equal to any other value.
+
+Note that the type of a value in JavaScript can be determined using the typeof operator.
+
+##### Object:
+JavaScript objects are a fundamental data type in the language and can be thought of as collections of key-value pairs. The keys are strings, and the values can be any type of data (numbers, strings, arrays, other objects, etc.)
+
+Example:
+    let person = {
+	      name: "John Doe",
+		    age: 30,
+      job: "software engineer",
+      hobbies: ["reading", "traveling", "coding"],
+      address: {
+        street: "123 Main St",
+        city: "San Francisco",
+        state: "CA"
+      }
+    };
+    <hr>
+   To access the values stored in an object, you can use dot notation or square bracket notation.
+   Example:
+
+       console.log(person.name);
+       console.log(person[name]);
+       console.log(person[hobbies[1]]);
+Above example will result in `John Doe` `John Doe` `reading`
+
+Accessing elements of and object using [ ] did'nt work. 
+<hr>
+
