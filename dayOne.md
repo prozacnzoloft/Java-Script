@@ -288,6 +288,7 @@ Example:
 
 ### Parseint() and Parsefloat()
 `parseInt()` and `parseFloat()`: Converts a string to a `Number` type, with `parseInt` only returning an integer and `parseFloat` allowing for decimal values.
+
 Example
 
     let num = parseInt("123");
