@@ -336,3 +336,47 @@ Example
    This will return `a` `string` `2` `number` `true` `boolean`
    Array itself is an object type data.
 
+### Equality Comparators
+To compare if two values are equal with one another we need equality comparators. In JS we use `==` `===` or `Object.is` to compare values of different data types.
+<hr>
+Difference between `==` and `===` is illustrated by code below
+
+    console.log(2==2)
+    console.log(2=="2")
+    console.log(false=="0")
+    console.log(0="")
+    console.log("break")
+    console.log(2===2)
+    console.log(2==="2")
+    console.log(false==="0")
+    console.log(0=="")
+   This code will give output `true` `true` `true` `true` `break` `true` `false` `false` `false`
+   <hr>
+   
+   As we can see, the `loose equality`  `==` operator converts the values of two operand as possible and then check for equality whereas the `strict equality` `===` operator check only the value hence if two data are of different data types, it returns `false`.
+   <hr>
+   
+Rest logical operators like `<` `>` `<=` `>=` `!==` `!===` all work as usual and so do `and` `or` and `not`.
+
+#### Object.is ()
+
+`Object.is()`  is not equivalent to the  `==`  operator. The  `==`  operator applies various coercions to both sides (if they are not the same type) before testing for equality (resulting in such behavior as  `"" == false`  being  `true`), but  `Object.is()`  doesn’t coerce either value.
+
+`Object.is()`  is also not equivalent to the  `===`  operator. The only difference between  `Object.is()`  and  `===`  is in their treatment of signed zeros and  `NaN`  values. The  `===`  operator (and the  `==`  operator) treats the number values  `-0`  and  `+0`  as equal but treats  `NaN`  as not equal to each other. 
+^This is wrong and IDK what right is soo...
+
+This is further explained by code code below:
+
+    console.log(NaN==NaN)
+    console.log(-0==+0)
+    
+    console.log(NaN===NaN)
+    console.log(-0===+0)
+    
+    console.log(Object.is(NaN, NaN))
+    console.log(Object.is(-0, +0))
+
+   This code returns `true` `false` `true` `false` `true` `false`
+  
+    
+
