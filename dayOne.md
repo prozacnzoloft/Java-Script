@@ -377,6 +377,66 @@ This is further explained by code code below:
     console.log(Object.is(-0, +0))
 
    This code returns `true` `false` `true` `false` `true` `false`
+   
+   ## Loops and Iterations
+In any programming language we use Loops and Iterations to automate repeating tasks/code multiple times with a statement whose Boolean value decides if the loop is to be executed or nor. Here, we talk about `for loop` and `while loop` and their derivatives. 
+### For loop
+Syntax:
+
+    for(statement1; statement2; statement3){
+    codehere;
+    }
+   We now discuss about how the program control flows in a for loop. When the control reaches the starting if the for loop, the first statement, statement1 is executed. After that, the second statement, statement2, which is usually a condition is checked, if the second statement is true, we run the code bounded by curly braces {}, and if not, the loop is terminated, and control is passed to the command following the loop after the closing curly brace. Once it is established that the second statement is true, the code is run and then the third statement, statement3 is executed which is where value of some variable is changed to as to keep the iteration of loop under control.
+    
+   #### For in loop
+   The for in loop is a variation of for loop that is used to deal with objects of Java Script. It is used to access the keys of an object. This is better explained by example below:
+   
+
+    let kathmandu = {
+    Baneshwor : 8,
+    Bhaktapur : 9,
+    Kausaltaar: 2,
+    }
+    for (let a in kathmandu){
+    console.log(`I rate ${a} ${kathmandu[a]} out of 10.`)
+    }
+   This will return these statements in console:
+
+    I rate Baneshwor 8 out of 10.
+
+    I rate Bhaktapur 9 out of 10.
+
+    I rate Kausaltaar 2 out of 10.
+#### For of loop
+We'll come back to this later, for now this is what you need to know. The for of loop is used to access only the values of keys in an object. This loop doesn't work with just any object, it asks for and iteratable object like an array.
+
+### While Loop
+The while loop is another kind of loop we have in JS, similar to the for loop, it is used to repeat a block of code until a condition is met. 
+Example: 
+
+	    var x = 10;
+	    while(x>=0){
+	    console.log(x);
+	    x--;
+	    }
+This code will return 10 9 8 7 6 5 4 3 2 1 0 to the console.
+#### do while loop
+The do while loop can be considered as a variant of the while loop. While the while loop check the condition prior to the execution of the code, the do while loop checks at the end of of one iteration for should there be next iteration or not. Because of this the code in a do while loop is executed atleast once.
+Example:
+
+	    var x = 0;
+	    do{
+	    console.log(x);
+	    x--;
+	    } while (x>10);
+This will return `0` to the console.
+
+### Break and continue
+
+
+   
+   
+
   
     
 
