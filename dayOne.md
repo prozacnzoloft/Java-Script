@@ -176,3 +176,61 @@ Above example will result in `Nawadit Sharma` `Nawadit Sharma` `reading`
 
 Accessing elements of and object using [ ] did'nt work. 
 <hr>
+
+##### Built-in Objects
+JavaScript has several built-in objects that provide common functionality and make it easier to work with different types of data. A few of the most commonly used built-in objects are `string`, `array`, `number`, `math`, `date`.
+###### String
+`String`: Represents a sequence of characters. For example, you can use the `length` property to get the number of characters in a string, or the `toUpperCase` method to convert a string to all uppercase characters.
+
+Example:
+
+    let name = "Nawadit Sharma";
+    console.log(name.length);
+    console.log(name.toUpperCase());
+This code will return `14` `NAWADIT SHARMA` 	to console
+<hr>
+
+###### Array
+
+`Array`: Represents a collection of values that can be of any type. Arrays are zero-indexed, meaning the first item has an index of 0. You can use the `length` property to get the number of items in an array, and the square bracket notation (e.g. `array[index]`) to access specific items.
+Example:
+
+    let hobbies = ["reading", "traveling", "coding"];
+    console.log(hobbies.length);
+    console.log(hobbies[1]);
+   This will return `3` `traveling` in console.
+   <hr>
+   
+  ###### Number
+  `Number`: Represents a numeric value. You can use the built-in methods of the `Number` object to perform mathematical operations, such as rounding or converting a number to a string.
+  Example:
+
+    let num = 123.456;
+    console.log(num.toFixed(2)); // "123.46"
+    console.log(num.toString()); // "123.456"
+   This will return `123.46` `124.56` to console.
+  <hr>
+  
+  ###### Math
+  `Math`: Provides mathematical functions and constants, such as trigonometric functions, exponential functions, and `PI`.
+  Example:
+
+    console.log(Math.PI); 
+    console.log(Math.sin(Math.PI / 2));
+    console.log(Math.exp(1));
+   This code will return `3.141592653589793` `1`  `2.718281828459045` to console.
+   <hr>
+   
+   ###### Date
+   `Date`: Represents a specific date and time. You can use the `Date` object to get the current date and time, format dates as strings, and perform date arithmetic.
+   Example:
+ 
+
+    let now = new Date();
+    console.log(now); // "
+    console.log(now.getFullYear()); // 2023
+    console.log(now.toDateString()); // 
+   This will return `Mon Feb 13 2023 18:11:21 GMT+0545 (Nepal Time)` `2023` `25 Mon Feb 13 2023` on console.
+   
+These are just a few of the many built-in objects in JavaScript. Understanding these objects and how to use them can make your JavaScript code more efficient and easier to write and maintain.
+   <hr>
