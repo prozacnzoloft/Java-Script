@@ -120,12 +120,12 @@ Example:
 This will return `hello` `hello` in console.
 <hr>
 
-### Data Types
+## Data Types
 
   
 JavaScript has several built-in data types, which can be grouped into two main categories: primitive data types and reference data types.
 
-#### Primitive data types:
+### Primitive data types:
 
  String: a set of characters (e.g. "Hello World").
  
@@ -138,7 +138,7 @@ Undefined: a value that represents a variable that has been declared but has not
 Null: a special value that represents the intentional absence of any object value.
 <hr>
 
-#### Reference data types:
+### Reference data types:
 
 Object: a collection of key-value pairs, used to store data.
 
@@ -150,7 +150,7 @@ Symbol: a new data type in ECMAScript 6 (ES6) that is used to create unique valu
 Note that the type of a value in JavaScript can be determined using the typeof operator.
 <hr>
 
-##### Object:
+#### Object:
 JavaScript objects are a fundamental data type in the language and can be thought of as collections of key-value pairs. The keys are strings, and the values can be any type of data (numbers, strings, arrays, other objects, etc.)
 
 Example:
@@ -179,9 +179,9 @@ Above example will result in `Nawadit Sharma` `Nawadit Sharma` `reading`
 Accessing elements of and object using [ ] did'nt work. 
 <hr>
 
-##### Built-in Objects
+#### Built-in Objects
 JavaScript has several built-in objects that provide common functionality and make it easier to work with different types of data. A few of the most commonly used built-in objects are `string`, `array`, `number`, `math`, `date`.
-###### String
+##### String
 `String`: Represents a sequence of characters. For example, you can use the `length` property to get the number of characters in a string, or the `toUpperCase` method to convert a string to all uppercase characters.
 
 Example:
@@ -192,7 +192,7 @@ Example:
 This code will return `14` `NAWADIT SHARMA` 	to console
 <hr>
 
-###### Array
+##### Array
 
 `Array`: Represents a collection of values that can be of any type. Arrays are zero-indexed, meaning the first item has an index of 0. You can use the `length` property to get the number of items in an array, and the square bracket notation (e.g. `array[index]`) to access specific items.
 Example:
@@ -213,7 +213,7 @@ Example:
    This will return `123.46` `124.56` to console.
   <hr>
   
-  ###### Math
+  ##### Math
   `Math`: Provides mathematical functions and constants, such as trigonometric functions, exponential functions, and `PI`.
   Example:
 
@@ -223,7 +223,7 @@ Example:
    This code will return `3.141592653589793` `1`  `2.718281828459045` to console.
    <hr>
    
-   ###### Date
+   ##### Date
    `Date`: Represents a specific date and time. You can use the `Date` object to get the current date and time, format dates as strings, and perform date arithmetic.
    Example:
  
