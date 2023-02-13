@@ -300,4 +300,39 @@ Example:
    This code will return number `123` `123.456` `number` `123.456`.
    <hr>
    
+   
+#### Difference between type conversion and type coercion.
+`Type conversion` and `type coercion` in JavaScript refer to the process of converting a value from one data type to another. The main difference between the two is that type conversion is an explicit operation, while type coercion is an implicit operation.
+### Data structures
+JavaScript has several built-in data structures that can be used to store and organize data. These include `arrays`, `objects`, `maps`, `sets`. 
+#### Structured data
+Structured data in JavaScript refers to data that is organized in a specific, predefined format. It can be used to represent and manipulate complex data structures such as arrays, objects, and tables. The format of structured data in JavaScript is often defined using JSON.
+#### JSON 
+JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is based on a subset of the JavaScript programming language and is often used to transmit data over a network for which we first need to stringify this data structure in a string, but the string will be of a fixed format so that it can again be changed into the data structure. We use JSON.stringify() and JSON.prase() to convert data to and from string in Java Script.
+Example
+
+    obj = {
+    firstName = "Nawadit",
+    rollNo = 11
+    };
+    console.log(obj)
+    let myString = JSON.stringify(obj)
+    console.log(myString)
+    obj2 =  JSON.parse(myString)
+    console.log(obj2);
+   This will return
+    `ObjectfirstName: "Nawadit"rollNo: 11[[Prototype]]: Object` 	
+    `{"firstName":"Nawadit","rollNo":11}`
+	`ObjectfirstName: "Nawadit"rollNo: 11[[Prototype]]: Object` 
+    to the console.
+#### Indexed Collection
+An indexed collection in JavaScript is a data structure that allows you to store and access elements using an index or key. The two main types of indexed collections in JavaScript are `arrays` and `objects`.
+##### Arrays
+Arrays are a type of indexed collection in which data can be accessed using a numeric index.
+Example
+
+    var array=[1, 2, 3, "a", "b", "c", true]
+    console.log(array[3], typeof array[3], array[1], typeof array[1], array[6], typeof array[6])
+   This will return `a` `string` `2` `number` `true` `boolean`
+   Array itself is an object type data.
 
