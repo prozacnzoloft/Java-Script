@@ -172,7 +172,7 @@ Example:
        console.log(person.name);
        console.log(person[name]);
        console.log(person[hobbies[1]]);
-Above example will result in `John Doe` `John Doe` `reading`
+Above example will result in `Nawadit Sharma` `Nawadit Sharma` `reading`
 
 Accessing elements of and object using [ ] did'nt work. 
 <hr>
