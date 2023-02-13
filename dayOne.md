@@ -136,6 +136,7 @@ Boolean: a value that can either be true or false.
 Undefined: a value that represents a variable that has been declared but has not been assigned a value.
 
 Null: a special value that represents the intentional absence of any object value.
+<hr>
 
 #### Reference data types:
 
@@ -147,6 +148,7 @@ Function: a block of code that performs a specific task and can be called multip
 Symbol: a new data type in ECMAScript 6 (ES6) that is used to create unique values that are not equal to any other value.
 
 Note that the type of a value in JavaScript can be determined using the typeof operator.
+<hr>
 
 ##### Object:
 JavaScript objects are a fundamental data type in the language and can be thought of as collections of key-value pairs. The keys are strings, and the values can be any type of data (numbers, strings, arrays, other objects, etc.)
