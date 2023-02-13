@@ -29,37 +29,41 @@ Hoisting doesn’t work on function expressions, let or const
 
 Examples
 
-greet();
-
-function greet(){
-
-console.log(“Hello”)
-
-}
+    greet();
+    
+    function greet(){
+    
+    console.log(“Hello”)
+    
+    }
 
 This will return “hello” in console
+<hr>
 
-console.log(a)
-
-var a;
+    console.log(a)
+    
+    var a;
 
 This will return “undefined” in console
+<hr>
 
-Console.log(a)
-
-let a = 0;
-
-This will give an error
-
-greet();
-
-const greet = function (){
-
-console.log(“Hello”)
-
-}
+    Console.log(a)
+    
+    let a = 0;
 
 This will give an error
+<hr>
+
+    greet();
+    
+    const greet = function (){
+    
+    console.log(“Hello”)
+    
+    }
+    
+This will give an error
+<hr>
 
 ### Variable Scope
 
@@ -69,52 +73,56 @@ Block: `let` is an example of block scope variable. This mean a variable initial
 
 Example:
 
-{let a = 9}
+    {let a = 9}
+    
+    console.log(a)
 
-console.log(a)
 
 This will return an error
+<hr>
 
-{let a = 9
-
-console.log(a)}
+    {let a = 9
+    
+    console.log(a)}
 
 This will return `9` in console.
+<hr>
 
 Function: Variable declared within a function can only be used within that function.
 
 Example
 
-function greet(){  
-var a = “hello”
-
-console.log(a)
-
-}
-
-console.log(a)
+        function greet(){  
+        var a = “hello”
+        
+        console.log(a)
+        
+        }
+    
+    console.log(a)
 
 This will return `hello` and then an error in console.
+<hr>
 
 Global: Variable declared outside curly braces and functions can be used anywhere in a program.
 
 Example:
 
-var a = “hello”
-
-function greet(){  
-console.log(a)
-
-}
-
-console.log(a)
+    var a = “hello”
+    
+    function greet(){  
+    console.log(a)
+    
+    }
+    
+    console.log(a)
 
 This will return `hello` `hello` in console.
+<hr>
 
 ### Data Types
 #### Primitive
 Number, String, Boolean, Null, Undefined, BigInt
 
-#### Non Primitive
-Objects, Arrays etc,
-
+#### Non-Primitive
+Objects, Arrays 
