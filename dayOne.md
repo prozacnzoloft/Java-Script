@@ -236,3 +236,68 @@ Example:
    
 These are just a few of the many built-in objects in JavaScript. Understanding these objects and how to use them can make your JavaScript code more efficient and easier to write and maintain.
    <hr>
+   
+   ## Type casting
+Type casting in JavaScript refers to the process of converting a value from one data type to another. JavaScript is a loosely typed language, meaning that the data type of a variable can change dynamically at runtime. However, sometimes you may need to explicitly convert a value to a different type. Some methods we use to do this are: `Number()` `String()` `Boolean()` `Parsenum()` `Parsefloat()` 
+### Number() 
+It converts data into number if possible or into NaN if not.
+Example:
+
+    let num = Number("123");
+    console.log(typeof num);
+    console.log(num);
+    
+    let str = Number("abc");
+    console.log(typeof str);
+    console.log(str);
+  This code will return `number` `123` `number` `NaN`
+  <hr>
+  
+  ### String
+  It converts a value into string type.
+  Example:
+
+     let num = 123;
+    console.log(typeof String(num));
+    console.log(String(num));
+    
+    let bool = true;
+    console.log(typeof String(bool));
+    console.log(String(bool));
+This code will return `string` `123` `string` `true` .
+<hr>
+
+### Boolean()
+It converts a value into boolean type.
+Example:
+
+    let num = 0;
+    console.log(typeof Boolean(num));
+    console.log(Boolean(num));
+    
+    let str = "";
+    let strr = "sdkfa";
+    
+    console.log(typeof Boolean(str));
+    console.log(Boolean(str));
+    
+    console.log(typeof Boolean(strr));
+    console.log(Boolean(strr));
+   This code will return `boolean` `false` `boolean` `false` `boolean` `true`.
+<hr>
+
+### Parseint() and Parsefloat()
+`parseInt()` and `parseFloat()`: Converts a string to a `Number` type, with `parseInt` only returning an integer and `parseFloat` allowing for decimal values.
+Example
+
+    let num = parseInt("123");
+    console.log(typeof num);
+    console.log(num);
+    
+    let decimal = parseFloat("123.456");
+    console.log(typeof decimal);
+    console.log(decimal);
+   This code will return number `123` `123.456` `number` `123.456`.
+   <hr>
+   
+
