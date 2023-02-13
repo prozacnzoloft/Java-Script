@@ -152,17 +152,19 @@ Note that the type of a value in JavaScript can be determined using the typeof o
 JavaScript objects are a fundamental data type in the language and can be thought of as collections of key-value pairs. The keys are strings, and the values can be any type of data (numbers, strings, arrays, other objects, etc.)
 
 Example:
-    let person = {
-	      name: "John Doe",
-		    age: 30,
-      job: "software engineer",
-      hobbies: ["reading", "traveling", "coding"],
-      address: {
-        street: "123 Main St",
-        city: "San Francisco",
-        state: "CA"
-      }
-    };
+   
+
+     let person = {
+    	      name: "John Doe",
+    		    age: 30,
+          job: "software engineer",
+          hobbies: ["reading", "traveling", "coding"],
+          address: {
+            street: "123 Main St",
+            city: "San Francisco",
+            state: "CA"
+          }
+        };
     <hr>
    To access the values stored in an object, you can use dot notation or square bracket notation.
    Example:
@@ -174,4 +176,3 @@ Above example will result in `John Doe` `John Doe` `reading`
 
 Accessing elements of and object using [ ] did'nt work. 
 <hr>
-
