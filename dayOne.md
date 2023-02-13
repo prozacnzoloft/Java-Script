@@ -288,8 +288,7 @@ Example:
 
 ### Parseint() and Parsefloat()
 `parseInt()` and `parseFloat()`: Converts a string to a `Number` type, with `parseInt` only returning an integer and `parseFloat` allowing for decimal values.
-
-Example
+Example:
 
     let num = parseInt("123");
     console.log(typeof num);
