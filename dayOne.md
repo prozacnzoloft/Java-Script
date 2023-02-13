@@ -155,14 +155,14 @@ Example:
    
 
      let person = {
-    	      name: "John Doe",
-    		    age: 30,
+    	      name: "Nawadit Sharma",
+    		    age: 19,
           job: "software engineer",
           hobbies: ["reading", "traveling", "coding"],
           address: {
-            street: "123 Main St",
-            city: "San Francisco",
-            state: "CA"
+            street: "Campus Road",
+            city: "Tansen",
+            state: "Lumbini"
           }
         };
     <hr>
