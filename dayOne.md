@@ -432,6 +432,242 @@ Example:
 This will return `0` to the console.
 
 ### Break and continue
+## Loops and Iterations
+In any programming language we use Loops and Iterations to automate repeating tasks/code multiple times with a statement whose Boolean value decides if the loop is to be executed or nor. Here, we talk about `for loop` and `while loop` and their derivatives. 
+### For loop
+Syntax:
+
+    for(statement1; statement2; statement3){
+    codehere;
+    }
+   We now discuss about how the program control flows in a `for loop`. When the control reaches the starting if the `for loop`, the first statement, `statement1` is executed. After that, the second statement, `statement2`, which is usually a condition check statement, if the second statement returns `true`, we run the code bounded by curly braces {}, and if not, the loop is terminated, and control is passed to the command following the loop after the closing curly brace. Once it is established that the second statement is true, the code is run and then the third statement, `statement3` is executed which is where value of some variable is changed to as to keep the iteration of loop under control.
+    
+   #### For in loop
+   The `for in` loop is a variation of `for` loop that is used to deal with objects of Java Script. It is used to access the keys of an object. This is better explained by example below:
+   
+
+    let kathmandu = {
+    Baneshwor : 8,
+    Bhaktapur : 9,
+    Kausaltaar: 2,
+    }
+    for (let a in kathmandu){
+    console.log(`I rate ${a} ${kathmandu[a]} out of 10.`)
+    }
+   This will return these statements in console:
+
+    I rate Baneshwor 8 out of 10.
+
+    I rate Bhaktapur 9 out of 10.
+
+    I rate Kausaltaar 2 out of 10.
+   <hr>
+    
+#### For of loop
+We'll come back to this later, for now this is what you need to know. The for of loop is used to access only the values of keys in an object. This loop doesn't work with just any object, it asks for and iterable object like an array.
+<hr>
+
+### While Loop
+The while loop is another kind of loop we have in JS, similar to the for loop, it is used to repeat a block of code until a condition is met. 
+Example: 
+
+	    var x = 10;
+	    while(x>=0){
+	    console.log(x);
+	    x--;
+	    }
+This code will return 10 9 8 7 6 5 4 3 2 1 0 to the console.
+<hr>
+
+#### do while loop
+The do while loop can be considered as a variant of the while loop. While the while loop checks the condition prior to the execution of the code, the do while loop checks at the end of one iteration for should there be next iteration or not. Because of this the code in a do while loop is executed at least once.
+Example:
+
+	    var x = 0;
+	    do{
+	    console.log(x);
+	    x--;
+	    } while (x>10);
+This will return `0` to the console.
+<hr>
+
+### Break and continue
+The break and continue statements are used to work with program control in a loop. The continue statement terminates the current iteration and passes the control to start of the loop. Similarly, the break statement terminates the current iteration and passes the control to statement following the loop.
+Example:
+
+    var x = 10;
+	    do{
+	    console.log(x);
+	    x--;
+	    if (x==4){
+	    console.log("Four");
+	    continue;
+	    }
+	    if(x==8){
+	    console.log("Bye Bye")
+	    break;
+	    } while (x>0);
+This code will return `1` `2` `3` `Four` `5` `6` `7` `Bye Bye` to the console. 
+<hr>
+
+#### Labeled Statements
+From what I gathered the labeled statements are useless in most cases but it's better to know about anything about the topic you're learning so let's get started. There is no `goto label;` statement in Java Script. We can only use labels with `break;` and `continue;` statements. These labeled statements are used mostly in data filtering using nested loops. A simple use case of these statements is given below:
+
+ 
+
+       var  obj1  = [{    
+    name: "Nawadit1",    
+    address: "Tansen1",
+    favriouteNO: 31,
+    favriouteSongs: ["Dress1", "Midnight rain1", "Gorgeous2"]
+    },
+    {
+    name: "Nawadit2",
+    address: "Tansen2",
+    favriouteNO: 32,
+    favriouteSongs: ["Dress2", "Midnight rain3", "Gorgeous2"]
+    },
+    {
+    name: "Nawadit3",
+    address: "Tansen3",
+    favriouteNO: 33,
+    favriouteSongs: ["Dress3", "Midnight rain", "Gorgeous3"]    
+    },    
+    {    
+    name: "Nawadit",
+    address: "Tansen",
+    favriouteNO: 3,
+    favriouteSongs: ["Dress", "Midnight rain", "Gorgeous","Midnight rain3"]
+    }]   
+    primaryLoop:
+    for (let  a  =  0; a<obj1.length; a++){
+    secondaryLoop:
+    for(let  b=0; b<obj1[a].favriouteSongs.length; b++){
+    if (obj1[a].favriouteSongs[b]==="Midnight rain3"){
+    console.log(obj1[a])
+    break primaryLoop;
+    }    
+    }    
+    }
+
+This will return 
+
+    {name: 'Nawadit2', address: 'Tansen2', favriouteNO: 32, favriouteSongs: Array(3)}address: "Tansen2"favriouteNO: 32favriouteSongs: (3) ['Dress2', 'Midnight rain3', 'Gorgeous2']name: "Nawadit2"[[Prototype]]: Object
+
+to the console
+<hr>
+
+## Control flow
+### Exception handling
+It's very frequent for a code to run into a bug every once in a while. In a normal scenario the execution of the rest of the code after where there is a mistake is skipped and the code terminates, and this is where exception handling or error handling comes in. Error handling as the name suggests is used to handle errors in your code.
+#### The try-catch statement
+The `try-catch` statement is used to handle error in parts of your code. It's syntax is something like this:
+
+    try{
+    //code that may cause error
+    }
+    catch(error_variable){
+    code to run if there occurs an error
+    }
+   When the program is run, the control is first passed to the code of the try block. If that code runs w/o any error, then the code of catch block is skipped and the control is passed to statement following the try-catch statement. If there does occur and error in the code in the try block, then the execution of the rest of the code in try block is skipped and the control is passed to the top of the code in catch block. 
+   An important thing to note while working with try-catch statement is that it only handles error of synchronous code of the try block and not the asynchronous one. This is explained by the examples below: 
+   
+    function  nawadit(){
+    console.log(taylor);
+    console.log("Code of nawadit() ran sucessfully.")
+    } 
+    try {
+    setTimeout(nawadit(), 1000);
+    console.log("code of `try` ran sucessfully.")
+    } catch (error) {
+    console.log("error handeled")
+    }
+
+   This will return `error handled` to the console.
+
+    try {
+	    setTimeout(() => {
+	    console.log(taylor);
+	    console.log("code of `try` ran sucessfully.")
+    }, 1000);
+    }
+    catch (error) {
+    console.log("error handeled");
+    }
+   This will return an error in the console.
+   <hr>
+   
+This is because the first problem the function is scheduled and then executed and checking and handling errors of nawadit() function or the code written directly here instead of calling a function,  falls under the scope of this try-catch statement whereas in second example the setTimeout() is used to schedule the code which it does w/o any problem and now the error arises with that code, handling which is not the responsibility of this try-catch statement.
+<hr>
+
+
+### Error objects
+Error object is the object passed from try clause to catch clause. This object properties like name, message and stack that are used to identify the error that occurred. All three of there properties contain string data.
+The name property contains the type of error that occured like reference error etc.
+The message error contains the message that is to be displayed in the console  
+The stack error contains the location of the line of code where the error occurred. To access these members we use . operator after error name.
+We can throw our own costume error objects using the `throw` statement
+
+
+#### Throw statement
+Syntax:
+throw new errorName ("Error message")
+<hr>
+
+
+### Finally statement
+The try-catch statement can have an additional block of code enclosed with in curly braces of finally statement that get executed regardless of if there is an error or not. This code gets executed even if the code of try or catch block isn't executed to the end. 
+
+Example:
+
+    try{
+    var age = prompt("Enter your age");
+    console.log(a)
+    throw new age("There was an error with getting the age)"
+    }
+    catch(error){
+    console.log(error.message);
+    }
+    finally{
+    console.log("The code of finally bock was executed")
+    }
+   This code should return `There was an error with getting the age` `The code of finally block was executed` to the console.
+   <hr>
+   
+   ### If else statement
+   The if else statement in JS is used to change flow of program control according to a condition. 
+   Example:
+   
+
+    int a = 2
+    if (a==3){
+    console.log("Three")
+    }
+    else if (a==4){
+    console.log("Four")
+    else if (a==2){
+    console.log("Two")
+   This code will return `Two` in console.
+   <hr>
+
+### Switch case statement
+The switch case executes the code only of that case who's case index matches the switch argument. 
+Example:
+
+    var a = 2;
+    switch(a):
+	    case 1:
+	    console.log("One")
+	    break;
+	    case 2:
+	    console.log("Two")
+	    break;
+	    case 3:
+	    console.log("Three")
+	    default:
+	    console.log("Invalid input")
+	    break;
+This code will return `Two` in console.
 
 
    
