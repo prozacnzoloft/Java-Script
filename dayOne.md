@@ -837,6 +837,20 @@ Where object is the name of an object, property is an existing property, and pro
 
 If the delete operator succeeds, it removes the property from the object. Trying to access it afterwards will yield `undefined`. The delete operator returns `true` if the operation is possible; it returns `false` if the operation is not possible.
 
+## Asynchronous JavaScript
+To be vivid, asynchronous javascript refers to the parallel running of functions. Most easy example of this is `setTimeout()` and `setInterval()` function.
+### Set time out
+Syntax:
+
+    setTimeout(function,delay time in ms, argumens...)
+   The function will be scheduled to run after said time and the control will be passed to next statement. When the time comes, the control comes back to the setTimeout-ed function and then the function is passes to where it came from.
+   <hr>
+
+### Set Interval
+Syntax:
+
+    setInterval(function, delay, arguments...)
+   Think of this as a repeated and infinite do while loop. When the given time is up, the setInterval-ed function runs. 
 
 
 
