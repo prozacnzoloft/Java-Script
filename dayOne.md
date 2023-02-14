@@ -669,6 +669,176 @@ Example:
 	    break;
 This code will return `Two` in console.
 
+## Expressions and operators
+An expression is a valid unit of code that resolves to a value. an operator is a character that represents a specific mathematical or logical action or process.
+In this section, we will introduce the following operators:
+
+Assignment operators
+Comparison operators
+Arithmetic operators
+Bitwise operators
+Logical operators
+BigInt operators
+String operators
+Conditional (ternary) operator
+Comma operator
+Unary operators
+Relational operators
+
+### Assignment Operators
+An assignment operator assigns a value to its left operand based on the value of its right operand. There are also compound assignment operators that are shorthand for the operations. 
+Example:
+`=` `+=` `-=` `*=` `/=` `**=` and so on
+
+### Comparator operator
+A comparison operator compares its operands and returns a logical value based on  the comparison.
+Example `==` `===` `!==` `!===` `<=` `>=` `<` `>`
+
+#### Strict and loose comparators.
+The loose equal `==` returns `true` if the operands are equal and strict equal `===`  Returns `true` if the operands are equal and of the same type. Similarly, the loose not equal != returns true if the operands are unequal and the strict not equal returns true if the operands and their data type are unequal.
+
+### Arithmetic operators
+An arithmetic operator takes numerical values (either literals or variables) as their operands and returns a single numerical value. The standard arithmetic operators are addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).  Apart from these some other frequently used operators are increment operator `++`, decrement operator `--`, remainder operator `%`, Urinary negation operator `-`, Urinary plus operator `+` tries to change the data into a number if not already, Exponential operator `**`
+
+### Bitwise operators
+A bitwise operator treats their operands as a set of 32 bits.
+Bitwise AND	
+
+    a & b
+
+Returns a one in each bit position for which the corresponding bits of both operands are ones.
+
+Bitwise OR	
+
+    a | b
+   Returns a zero in each bit position for which the corresponding bits of both operands are zeros.
+Bitwise XOR	
+
+    a ^ b
+
+	
+Returns a zero in each bit position for which the corresponding bits are the same. [Returns a one in each bit position for which the corresponding bits are different.
+
+Bitwise NOT
+
+    ~a
+
+Inverts the bits of its operand. Left shift	a << b	Shifts a in binary representation b bits to the left, shifting in zeros from the right.
+ 
+Sign-propagating right shift
+		
+
+    a >> b
+				
+
+Shifts a in binary representation b bits to the right, discarding bits shifted off.
+
+Zero-fill right shift
+
+    a >>> b	
+
+Shifts a in binary representation b bits to the right, discarding bits shifted off, and shifting in zeros from the left.
+
+ and   `15 & 9=9	1111 & 1001 = 1001`
+
+ or   `15 | 9	=15	1111 | 1001 = 1111`
+
+xor    `15 ^ 9	=6	1111 ^ 1001 = 0110`
+
+ negation   `~15 =	-16	~ 0000 0000 … 0000 1111 = 1111 1111 … 1111 0000`
+
+ negation   `~9 =	-10	~ 0000 0000 … 0000 1001 = 1111 1111 … 1111 0110`
+
+left shift `<<` 	9<<2 yields 36
+
+right shift `>>` 9>>2 yields 2
+
+### Logical operators
+Logical operators are typically used with Boolean (logical) values; when they are, they return a Boolean value. However, the && and || operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.
+
+Logical AND (`&&`)	
+
+    expr1 && expr2
+
+When used with Boolean values, `&&` returns `true` if both operands are `true`; otherwise, returns `false`.
+
+Logical OR (`||`)	
+
+    expr1 || expr2
+
+When used with Boolean values, || returns true if either operand is true; if both are false, returns false.
+
+Logical NOT (`!`)	
+
+    !expr
+
+Returns false if its single operand that can be converted to true; otherwise, returns true.
+
+### String operators
+In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings.
+Example
+
+    console.log("my " + "string");
+ This will console logs the string "my string".
+ 
+The shorthand assignment operator += can also be used to concatenate strings.
+
+Example
+
+    let mystring = "alpha";
+    mystring += "bet"; 
+   This code evaluates to "alphabet" and assigns this value to mystring.
+
+### Conditional (ternary) operator
+
+The conditional operator is the only JavaScript operator that takes three operands. The operator can have one of two values based on a condition. 
+The syntax is:
+
+    condition ? val1 : val2
+
+
+If condition is true, the operator has the value of val1. Otherwise, it has the value of val2. You can use the conditional operator anywhere you would use a standard operator.
+Example:
+
+    const status = age >= 18 ? "adult" : "minor";
+
+This statement assigns the value "adult" to the variable status if age is eighteen or more. Otherwise, it assigns the value "minor" to status.
+
+### Comma operator
+This operator is primarily used inside a for loop, to allow multiple variables to be updated each time through the loop.
+Example: 
+
+    const x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const a = [x, x, x, x, x];
+    
+    for (let i = 0, j = 9; i <= j; i++, j--) {
+                                    
+      console.log(`a[${i}][${j}]= ${a[i][j]}`);
+    }
+   This will return 
+a[0][9]= 9
+a[1][8]= 8
+a[2][7]= 7
+a[3][6]= 6
+a[4][5]= 5
+to the console.
+
+### Unary operators
+A unary operation is an operation with only one operand.
+
+#### delete
+The delete operator deletes an object's property. The syntax is:
+
+    delete object.property;
+    delete object[propertyKey];
+    delete objectName[index];
+
+Where object is the name of an object, property is an existing property, and propertyKey is a string or symbol referring to an existing property.
+
+If the delete operator succeeds, it removes the property from the object. Trying to access it afterwards will yield `undefined`. The delete operator returns `true` if the operation is possible; it returns `false` if the operation is not possible.
+
+
+
 
    
    
