@@ -837,6 +837,71 @@ Where object is the name of an object, property is an existing property, and pro
 
 If the delete operator succeeds, it removes the property from the object. Trying to access it afterwards will yield `undefined`. The delete operator returns `true` if the operation is possible; it returns `false` if the operation is not possible.
 
+## Functions
+Functions are reference type data in JavaScript, essentially, they are just a set of statements that performs a task or calculates a value. They can be considered as the building blocks of program.
+Syntax:
+
+    function functionName(){	//declaring function
+    //code
+    }
+    functionName();				//calling function
+   ### Parameterized function
+   Syntax:
+
+    function functionName(parameters...){	//declaring
+    //code
+    }
+    functionName(arguments...);				//calling
+Variables ie. parameters are not accessible outside the function.
+
+### Default Parameters
+
+    function functionName(parameter=value){
+     //code
+     }
+     functionName(argument)
+While using default parameter, when no argument is passed to the parameterized function, it resorts to using the default value of the parameter variable provided at the time of decleration but if the argument is passed, the default value is replaced by value of passed argument.
+### Rest Parameters
+Rest parameters are useful when working with unspecified numbers of parameters that are to be passed to a function. Here, whatever arguments are passed to a function while calling, they all get changed into memebers of an array. Then this array can be manipulated as normal.
+Syntax:
+
+    function functionName(...arrayName){
+    //code
+    }
+    functionName(arguments);
+### Arrow functions
+Arrow functions are 
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Normal Function</b></td>
+    <td><b style="font-size:30px">Arrow Function</b></td>
+ </tr>
+ <tr>
+    <td>function sum(a, b){
+    return a+b)}
+    <hr>
+    </td>
+    <td>let sum = (a,b ) +> a+b; <hr>let sum = (a,b) =>{return a+b;}</td>
+ </tr>
+ <tr>
+    <td>function square (a){
+    return a*a;
+    }
+    <hr>
+    </td>
+    <td>let sum = a => a*a<hr>let sum = (a) => a*a</td>
+ </tr>
+ <tr>
+    <td>function pi(){
+    return 3.14;
+    }
+    <hr>
+    </td>
+    <td>let pi = () => 3.14; <hr>let pi = () =>{return 3.14;}</td>
+ </tr>
+
+</table>
+
 ## Asynchronous JavaScript
 To be vivid, asynchronous javascript refers to the parallel running of functions. Most easy example of this is `setTimeout()` and `setInterval()` function.
 ### Set time out
