@@ -33,14 +33,14 @@ This will select the element of tag of given Tag name from the webpage.
 
 This will select the element of class of given class name from the webpage.
 
-## querySelector('Tag name')
+## querySelector('cssSelector')
 
     const byQuery = document.querySelector('p');
     console.log(byQuery, typeof byQuery)
 
 This will select the first element of given tag name from the webpage,
 
-## querySelectorAll()
+## querySelectorAll('cssSelector')
 
     const byQueryAll = document.querySelector('p')
     console.log(byQueryAll, typeof byQueryAll)
