@@ -5,6 +5,7 @@ The DOM itself is a property of the window object which can be used to access th
 # The DOM Tree
 
 ![DOM Tree](https://www.w3schools.com/js/pic_htmltree.gif)
+
 In the diagram of DOM tree we can see that the Document is the root node. It has one child node, html. The Document node is the parent node of the html node. Similarly the html node has two children the head node and the body node. The head node and the body node are siblings. Again coming down through body note we see that the a node has two nodes. However the  attribute node doesnot parttake in the parent-child-sibling relation of DOM tree, instead they are accessed by using the property of the element node they belong to.
 
 # Selecting node
