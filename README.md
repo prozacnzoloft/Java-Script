@@ -4,3 +4,5 @@ This repositor contains all the theory and mock projects I'll learn and make whi
 Feb 13, 2023-> [This file](https://github.com/prozacnzoloft/Java-Script/blob/main/dayOne.md) contains all the basic knowledge of Java Script.
 
 Feb 15, 2023-> [This file](https://github.com/prozacnzoloft/Java-Script/blob/main/DOM.md) contains everything I know about the DOM manipulation in Java Script.
+
+Feb 22, 2023-> [This file](https://github.com/prozacnzoloft/Java-Script/blob/main/tailwind-installation) will teach you how to install Tailwind into your project
