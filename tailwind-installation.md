@@ -83,3 +83,5 @@ This code commands the postcss to watch the files indicated in `tailwind.config.
 
 You can edit the project from here on.
 Use Live Server Extension on VS Code
+
+Credits [Suyog Satyal](https://github.com/suyogsatyal)
